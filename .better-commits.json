@@ -79,7 +79,7 @@
     "commit_scope": {
         "enable": true,
         "custom_scope": false,
-        "initial_value": "app",
+        "initial_value": "backend",
         "options": [
             {
                 "value": "dashboard",
