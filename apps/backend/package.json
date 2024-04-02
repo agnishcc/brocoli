@@ -7,7 +7,8 @@
     "hono": "^4.1.7",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@repo/db": "workspace:*"
+    "@repo/db": "workspace:*",
+    "@repo/apikey": "workspace:*"
   },
   "devDependencies": {
     "@types/bun": "latest"
