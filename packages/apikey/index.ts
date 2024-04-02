@@ -2,7 +2,6 @@
  * @description Generates a random API key
  * 
  * @returns a apiKey string
- * @type {Function}
  * @example
  * const apiKey = generateApiKey();
  * console.log(apiKey);
@@ -25,7 +24,6 @@ export const generateApiKey = (): string => {
  * @param {number} visibility.end - The number of visible characters at the end of the API key. Default is 4
  * 
  * @returns a obfuscated API key string
- * @type {Function}
  * @example
  * const apiKey = '3d4f5g6h7j8k9l0';
  * const obfuscatedApiKey = obfuscateApiKey(apiKey);

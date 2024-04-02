@@ -5,6 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --max-warnings 0",
     "db:generate": "bunx drizzle-kit generate:pg",
     "db:push": "dotenv -e ../../.env -- bunx drizzle-kit push:pg",
     "db:studio": "dotenv -e ../../.env bunx drizzle-kit studio",
@@ -15,12 +16,12 @@
     "./schema/*": "./src/schema/*.ts",
     "./ormProxy": "./src/db/ormProxy.ts"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "drizzle-kit": "^0.20.14"
+    "drizzle-kit": "^0.20.14",
+    "@repo/eslint-config": "workspace:*"
   },
   "dependencies": {
     "drizzle-orm": "^0.30.6",
