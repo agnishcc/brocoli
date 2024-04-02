@@ -1,0 +1,28 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:generate": "bunx drizzle-kit generate:pg",
+    "db:push": "dotenv -e ../../.env -- bunx drizzle-kit push:pg",
+    "db:studio": "dotenv -e ../../.env bunx drizzle-kit studio",
+    "db:migration:drop": "bunx drizzle-kit drop"
+  },
+  "exports": {
+    "./db": "./src/db/db.ts",
+    "./schema/*": "./src/schema/*.ts"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "drizzle-kit": "^0.20.14"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.30.6",
+    "postgres": "^3.4.4"
+  }
+}

@@ -1,0 +1,12 @@
+FROM postgres:latest
+
+# Set environment variables for username, password, and database name
+ENV POSTGRES_USER=myuser
+ENV POSTGRES_PASSWORD=mypassword
+ENV POSTGRES_DB=mydb
+
+# Expose the default Postgres port (5432)
+EXPOSE 5432
+
+# Run Postgres with custom configuration
+CMD ["postgres", "-h", "localhost", "-p", "5432", "-N", "$POSTGRES_DB", "-U", "$POSTGRES_USER"]
