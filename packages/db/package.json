@@ -12,7 +12,8 @@
   },
   "exports": {
     "./db": "./src/db/db.ts",
-    "./schema/*": "./src/schema/*.ts"
+    "./schema/*": "./src/schema/*.ts",
+    "./ormProxy": "./src/db/ormProxy.ts"
   },
   "type": "module",
   "keywords": [],
