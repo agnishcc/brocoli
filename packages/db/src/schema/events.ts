@@ -11,7 +11,7 @@ export const eventTemplates = pgTable('EventTemplates', {
     appId: integer('app_id').references(() => apps.id),
 }, (eventTemplates) => {
     return {
-        nameIndex: uniqueIndex('name_idx').on(eventTemplates.name),
+        nameIndex: uniqueIndex('event_name_idx').on(eventTemplates.name),
     }
 });
 

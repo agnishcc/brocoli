@@ -13,7 +13,7 @@ export const apps = pgTable('Apps', {
     createdAt: timestamp('createdAt', { withTimezone: true }).defaultNow(),
 }, (apps) => {
     return {
-        nameIndex: uniqueIndex('name_idx').on(apps.name),
+        nameIndex: uniqueIndex('app_name_idx').on(apps.name),
     }
 });
 
@@ -30,7 +30,7 @@ export const apiKeys = pgTable('ApiKeys', {
     createdAt: timestamp('createdAt', { withTimezone: true }).defaultNow(),
 }, (apiKeys) => {
     return {
-        keyIndex: uniqueIndex('key_idx').on(apiKeys.key),
+        keyIndex: uniqueIndex('api_key_idx').on(apiKeys.key),
     }
 });
 

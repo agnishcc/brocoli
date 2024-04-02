@@ -11,7 +11,7 @@ export const organtizations = pgTable('Organizations', {
     createdAt: timestamp('createdAt', { withTimezone: true }).defaultNow(),
 }, (organtizations) => {
     return {
-        nameIndex: uniqueIndex('name_idx').on(organtizations.name),
+        nameIndex: uniqueIndex('org_name_idx').on(organtizations.name),
     }
 });
 
