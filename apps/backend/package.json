@@ -5,11 +5,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "hono": "^4.1.7",
+    "@repo/apikey": "workspace:*",
+    "@repo/db": "workspace:*",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@repo/db": "workspace:*",
-    "@repo/apikey": "workspace:*"
+    "hono": "^4.1.7",
+    "reflect-metadata": "^0.2.2",
+    "typedi": "^0.10.0"
   },
   "devDependencies": {
     "@types/bun": "latest"
